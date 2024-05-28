@@ -77,7 +77,7 @@ function Login() {
                         <button type="submit">Login</button>
                     </form>
                     <p align="center">
-                        Don't have an account? <Link to="/signup">Sign up here</Link>
+                        Don't have an account? <Link to="/">Sign up here</Link>
                     </p>
                 </div>
             )}

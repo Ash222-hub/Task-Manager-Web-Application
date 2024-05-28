@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate } from 'react-router-dom';
 import './SignUp.css'; // Import CSS file
 
 function SignUp() {
@@ -100,6 +100,7 @@ function SignUp() {
           {loading ? 'Signing Up...' : 'Sign Up'}
         </button>
       </form>
+      <p>Already have an account? <Link to="/login">Log in here</Link></p>
     </div>
   );
 }
