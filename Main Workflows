@@ -1,0 +1,29 @@
+User Registration (Signup):
+
+•	User visits the signup page.
+•	User fills in the signup form with a username and password.
+•	User submits the form.
+•	Frontend sends a POST request to the backend /api/auth/signup endpoint with the signup data.
+•	Backend verifies the validity of the data, checks if the username is available, hashes the password, and creates a new user in the database.
+•	Backend sends a response to the frontend indicating success or failure.
+•	If successful, the user is redirected to the login page.
+
+User Authentication (Login):
+
+•	User visits the login page.
+•	User enters their username and password.
+•	User submits the login form.
+•	Frontend sends a POST request to the backend /api/auth/login endpoint with the login credentials.
+•	Backend verifies the credentials, creates a session for the user, and sends a response with a session token.
+•	Frontend stores the session token (e.g., in session storage) for subsequent requests.
+•	If authentication is successful, the user is redirected to the todo list page.
+
+Task Manager (Application):
+
+•	Authenticated user visits the todo list page.
+•	Frontend sends a GET request to the backend /api/todo endpoint to fetch the user's todo list data.
+•	Backend retrieves the user's todo list data from the database and sends it back to the frontend.
+•	Frontend displays the todo list data to the user.
+•	User can add, edit, delete tasks on the todo list.
+•	Frontend sends appropriate POST, PUT, DELETE requests to the backend API to update the todo list data in the database.
+•	Backend processes these requests, updates the todo list data in the database, and sends a response indicating success or failure.
